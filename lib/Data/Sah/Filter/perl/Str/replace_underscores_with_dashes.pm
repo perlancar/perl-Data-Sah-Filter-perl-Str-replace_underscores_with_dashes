@@ -36,6 +36,6 @@ sub filter {
 =for Pod::Coverage ^(meta|filter)$
 
 
-=head1 prepend:SEE ALSO
+=head1 SEE ALSO
 
 L<Data::Sah::Filter::perl::Str::replace_dashes_with_underscores>
