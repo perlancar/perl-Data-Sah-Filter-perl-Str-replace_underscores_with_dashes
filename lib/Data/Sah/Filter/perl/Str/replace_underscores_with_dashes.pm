@@ -1,18 +1,29 @@
 package Data::Sah::Filter::perl::Str::replace_underscores_with_dashes;
 
+use 5.010001;
+use strict;
+use warnings;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
 
-use 5.010001;
-use strict;
-use warnings;
-
 sub meta {
     +{
         v => 1,
         summary => 'Replace underscores in string with dashes',
+        examples => [
+            {value=>'foo'},
+            {value=>'foo_bar', filtered_value=>'foo-bar'},
+        ],
+        description => <<'_',
+
+This is mostly created as a counterpart for the replace_dashes_with_underscores
+filter (<pm:Data::Sah::Filter::perl::Str::replace_dashes_with_underscores>). So
+far I haven't got a practical use for this.
+
+_
     };
 }
 
